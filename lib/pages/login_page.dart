@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:projeto01/components/login/custom_login_button_component.dart';
 import 'package:projeto01/controllers/login_controller.dart';
@@ -20,7 +22,6 @@ class LoginPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
-          // ignore: prefer_const_literals_to_create_immutables
           children: [
             // ignore: prefer_const_constructors
             Icon(
@@ -43,6 +44,18 @@ class LoginPage extends StatelessWidget {
             CustomLoginButtonComponent(
               loginController: _controller,
             ),
+            // ignore: prefer_const_constructors
+            SizedBox(
+              height: 15,
+            ),
+
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.end,
+            //   children: [
+            //     // ignore: prefer_const_constructors
+            //     Text('Nao tem uma conta?'),
+            //   ],
+            // )
           ],
         ),
       ),

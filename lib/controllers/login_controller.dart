@@ -14,5 +14,9 @@ class LoginController {
     await Future.delayed(Duration(seconds: 2));
     inLoader.value = false;
     return _login == 'admin' && _pass == '123';
+    //  if (_login == 'admin' && _pass == '123') {
+    //   PrefsService.save(_login!);
+    // }
+    // return false;
   }
 }
